@@ -203,3 +203,84 @@
 // ques no 11 
 // Calculate the number of years between March 15, 1995 and today.
 // Output needed: Whole number of years passed.
+//  ans 
+// let current = new Date();
+// let target = new Date('15 March 1995');
+// let milliseconds = current - target;
+// console.log(milliseconds);
+//  let years = milliseconds / (1000* 60 * 60 * 24 *30 * 12 );
+//      years = Math.floor(years);
+//  console.log(years);
+// ___________________________________________________________________________________________
+// ques no 12 
+// Determine how many days are left until New Year (Jan 1 next year).
+// Output needed: Days remaining until Jan 1.
+// ans 
+// let current = new Date();
+// let target = new Date('01 January 2026');
+// let currentmilliseconds = current.getTime();
+// let targetmilliseconds = target.getTime();
+// let calculateMilliSeconds = targetmilliseconds - currentmilliseconds;
+// console.log(calculateMilliSeconds);
+
+// let day = calculateMilliSeconds / (1000 * 60 * 60 * 24);
+//     day = Math.floor(day);
+// console.log(day);
+// __________________________________________________________________________________________________
+// ques no 13 
+// Find out the total number of hours you have lived since your birthdate (e.g., July 8, 1996).
+// Output needed: Total hours lived.
+// ans 
+// let current = new Date();
+// let birthdate = new Date('09 September 1992');
+// let milliseconds = current - birthdate;
+// console.log(milliseconds);
+// let hours = milliseconds / (1000 * 60 * 60);
+//     hours = Math.round(hours);
+// console.log(hours);
+// _______________________________________________________________________________
+// ques no 14 
+// Calculate the number of seconds between today and December 25, 2025.
+// Output needed: Total seconds until Dec 25, 2025.
+// ans 
+// let current = new Date();
+// let target = new Date('25 December 2025');
+// let milliseconds = target - current;
+// console.log(milliseconds);
+
+// let seconds = milliseconds / 1000;
+//     seconds = Math.ceil(seconds);
+// console.log(seconds);
+// ________________________________________________________________________________________________
+// ques no 15 
+// Check if the current year is a leap year or not.
+// Output needed: true or false.
+// ans 
+// let current = new Date();
+// let year = current.getFullYear();
+// console.log(year);
+// if(year % 4 === 0){console.log('leap year')}
+// else{console.log('not leap year')}
+// _____________________________________________________________________________________________
+// ques no 16 
+// Write a program that shows the exact age (years, months, days) of a person born on July 8, 1996.
+// Output needed: Example: Age: 28 years, 3 months, 2 days
+
+// ans 
+let current = new Date();
+let target = new Date('09 September 1992');
+let milliseconds = current - target;
+    milliseconds = Math.floor(milliseconds);
+console.log(milliseconds);
+let year = milliseconds/(1000*60*60*24*30*12);
+    year = Math.floor(year);
+console.log(year);
+let totalmonth = milliseconds/(1000*60*60*24*30);
+     totalmonth = Math.floor(totalmonth);
+console.log(totalmonth);
+
+let totalDays = milliseconds/(1000 * 60 * 60 *24 );
+   totalDays = Math.floor(totalDays);
+   console.log(totalDays);
+   let monthSpend = year * 30;
+   console.log(monthSpend);
