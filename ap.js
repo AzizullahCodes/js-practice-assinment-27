@@ -263,24 +263,206 @@
 // else{console.log('not leap year')}
 // _____________________________________________________________________________________________
 // ques no 16 
-// Write a program that shows the exact age (years, months, days) of a person born on July 8, 1996.
-// Output needed: Example: Age: 28 years, 3 months, 2 days
+// 
+// Write a program to display the current time in the format HH:MM:SS.
+// Output needed: Current time (e.g., 14:35:09)
+// ans 
+// let current = new Date();
+// let time = current.toLocaleTimeString();
+// console.log(time);
+// ___________________________________________________________________________
+// ques no 17
+// Simulate a Coin Toss 🪙
+// Use Math.random to simulate flipping a coin. Print Heads or Tails.
+// Output needed: Heads or Tails
+// ans 
+// let random = Math.random();
+// console.log(random);
+//     random = random * 2;
+//     console.log(random);
+//     random = random + 1;
+//     console.log(random);
+//     random = Math.floor(random);
+//     console.log(random);
+//     if(random === 1){console.log('Head')}
+//     else{console.log('tail')}
+// ___________________________________________________________________________________
+// ques 18
+// traffic signal
+// ans 
+// let signal = ['red','green','yellow','pink'];
+// let random = Math.random()* signal.length;
+//    random = Math.floor(random);
+// console.log(random);
+// let result = signal[random];
+// console.log(result);
+// if(result === 'red'){console.log('stop')}
+// else if(result === 'yellow'){console.log('start but not move')}
+// else{console.log('move slowly')}
+// ________________________________________________________________________________________
+// ques no  19 
+// Use prompt() to ask the user to enter a number with many decimals, then 
+// use .toFixed(2) to format it.
+// ans 
+// let enterNumber = prompt('enter a decimal number');
+//     enterNumber = Number(enterNumber);
+// let result = enterNumber.toFixed(2);
+// console.log(result)
+// ______________________________________________________________________________________
+// ques no 20
+// Show the value of Math.PI
+// Create a variable that stores Math.PI.
+
+// Show the value in the console and with alert().
 
 // ans 
-let current = new Date();
-let target = new Date('09 September 1992');
-let milliseconds = current - target;
-    milliseconds = Math.floor(milliseconds);
-console.log(milliseconds);
-let year = milliseconds/(1000*60*60*24*30*12);
-    year = Math.floor(year);
-console.log(year);
-let totalmonth = milliseconds/(1000*60*60*24*30);
-     totalmonth = Math.floor(totalmonth);
-console.log(totalmonth);
+// let vari = Math.PI;
+// console.log(vari);
+// let fix = vari.toFixed(2);
+// console.log(fix);
+// ______________________________________________________________________________________
+// ques no 22
+// Create a number
+// let num = 123;
+// convert it to string
+// ans 
+// no 1 
+// let num = 123;
+//    console.log(typeof num);
+//    num = num.toString();
+//    console.log(typeof num);
+// no 2
+// let num = 123;
+// console.log(typeof num);
+//    num = num + '';
+//    console.log(num);
+//    console.log(typeof num);
 
-let totalDays = milliseconds/(1000 * 60 * 60 *24 );
-   totalDays = Math.floor(totalDays);
-   console.log(totalDays);
-   let monthSpend = year * 30;
-   console.log(monthSpend);
+// no 3
+// let num = 123;
+// console.log(typeof num);
+// num = String(num);
+// console.log(num);
+// console.log(typeof num);
+// _______________________________________________________________________________
+// ques no 23 
+// Creates a variable str1 with the value "123"
+// Uses parseInt() to convert str1 to a number
+// Logs the result to the console
+// ans 
+// let str1 = '123.532';
+//    console.log(str1);
+//    console.log(typeof str1);
+//    str1 = parseInt(str1);
+//    console.log(str1);
+//    console.log(typeof str1);
+// _______________________________________________________________________________________
+// ques no 24
+// parseFloat()
+// ans 
+
+//    let str1 = '123.532';
+//    console.log(str1);
+//    console.log(typeof str1);
+//    str1 = parseFloat(str1);
+//    console.log(str1);
+//    console.log(typeof str1);
+// __________________________________________________________________________
+// ques no 25 
+// Use charAt() to get the last character of the string "Coding".
+// 💡 Tip: Use word.length - 1 to find the last index.
+// ans 
+// let str1 = 'coding';
+// let firstChar = str1.charAt(0);
+// console.log(firstChar);
+// let last = str1.charAt(str1.length-1);
+// console.log(last);
+// _______________________________________________________________________________
+// ques no 26 
+// string[index]
+// ans 
+// let str = 'coding';
+// let first = str[0];
+// console.log(first);
+// let last = str[str.length-1];
+// console.log(last);
+// _________________________________________________________________________________________
+// ques no 27
+// .toUpperCase() & .toLowerCase()
+// ans 
+// let word = prompt('enter word');
+// console.log(word);
+//     word = word.toUpperCase();
+//     console.log(word);
+
+//     word = word.toLowerCase();
+//     console.log(word);
+// _________________________________________________________________________________________
+// ques no 28 
+// Get a Number from the User and Show the Square Root:
+// ans 
+// let number = Number(prompt('Enter a number'));
+// let result = Math.sqrt(number);
+// console.log(result);
+// _______________________________________________________________________________________
+// ques no 29 
+// Math.abs()
+// ans 
+// let value = -243.34;
+// console.log(value);
+//     value = Math.abs(value);
+//     console.log(value);
+// _______________________________________________________________________________
+// ques no 30 
+// Math.round( );
+// ans 
+// let number = 34.278;
+//   console.log(number);
+//   number = Math.round(number);
+//   console.log(number);
+// ___________________________________________________________________________________
+// ques no 31 
+// Math.ceil( );
+// ans 
+// let number = 34.978;
+//   console.log(number);
+//   number = Math.ceil(number);
+//   console.log(number);
+// __________________________________________________________________________________________
+// ques no 32
+// Math.Floor();
+// ans 
+// let number = 34.978;
+//   console.log(number);
+//   number = Math.floor(number);
+//   console.log(number);
+// ________________________________________________________________________________________________
+// ques no 33
+// Math.max( );
+// ans 
+// console.log(Math.max(3,77,21,54));
+// _______________________________________________________________________________
+// ques no 34 
+// Math.min()
+// console.log(Math.min(2,78,887,1));
+// ___________________________________________________________________________
+// ques no 35
+// Math.random();
+// ans 
+// let color = ['red','green','yellow','blue'];
+// let random = Math.random()*color.length;
+//     random = Math.floor(random);
+// console.log(random);
+// let result = color[random];
+// console.log(result);
+// __________________________________________________________________________________
+// ques no 36 
+// for loop 
+// ans 
+// for(let i = 0; i <= 10; i++){console.log(i)}
+// _____________________________________________________________________________________
+// ques no 37 
+// nested for loop
+// for(let i = 1; i <= 10; i++){console.log('i',i)
+//     for(let j = 1 ; j <= 10; j++){console.log('j',j)}
+// }
